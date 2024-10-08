@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+       <div class="form-header">
+            <p>Formulário</p>
+       </div>
+       <div class="form-body">
+            <h1 class="form-title">Preencha esses campos</h1>
+            <p>Preencha de acordo com suas informações pessoais </p>
+       
+       <form>
+            <div class="box-input">
+                <label for="title">Título <span class="requiered-field"> *</span> </label>
+                <input 
+                    type="text" 
+                    name="title" 
+                    id="title" 
+                    class="block" 
+                    placeholder="Preencha o título"
+                    minlength="1"
+                    maxlength="30"
+                    id="title"
+                    required
+                />
+            </div>
+         <div class="box-input">
+            <label for="CEP">CEP<span class="requiered-field"> *</span> </label>
+            <input 
+                type="text" 
+                name="title" 
+                id="title" 
+                class="block" 
+                placeholder="Preencha o CEP"
+                minlength="1"
+                maxlength="8"
+                id="r"
+                required
+            />
+        </div>
+        <div class="box-input">
+            <label for="endereço">Endereço<span class="requiered-field"> *</span></label>
+            <input 
+                type="text" 
+                name="title" 
+                id="title" 
+                class="block" 
+                placeholder="Preencha o endereço"
+                minlength="1"
+                maxlength="30"
+                id="endereço"
+                required
+            />
+        </div>
+        <div class="box-input">
+            <label for="number">Número<span class="requiered-field"> *</span> </label>
+            <input 
+                type="number" 
+                name="title" 
+                id="title" 
+                class="block" 
+                placeholder="Preencha o número"
+                minlength="1"
+                maxlength="30"
+                id="number"
+                required
+            />
+        </div>
+        <div class="box-input">
+            <label for="complemento">Complemento<span class="requiered-field"> *</span> </label>
+            <input 
+                type="text" 
+                name="title" 
+                id="title" 
+                class="block" 
+                placeholder="Preencha o complemento"
+                minlength="1"
+                maxlength="30"
+                id="complemento"
+                required
+            />
+        </div>
+        <br><input type="submit" value="Enviar" class="btn-submit" onclick="verificar()">
+       </div>
+       </form>
+    </div>
+</body>
+</html>
